@@ -12,15 +12,17 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+# Use the PostgreSQL gem for Heroku production servers
+gem 'pg', '0.18.4'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+# Use sendgrid-ruby gem to send emails to users
+gem 'sendgrid-ruby'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -39,8 +41,6 @@ group :development, :test do
 end
 
 group :production do 
-  # Use the PostgreSQL gem for Heroku production servers
-  gem 'pg', '0.18.4'
   gem 'rails_12factor'
 end
 
