@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'pg', '0.18.4'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'devise'
+gem 'milia'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
@@ -52,3 +54,6 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'recaptcha', require: 'recaptcha/rails'
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
