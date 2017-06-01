@@ -9,11 +9,12 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   
+  
   ActionMailer::Base.smtp_settings = {
     :address => "smtp.gmail.com",
     :port => "587",
     :authentication => :plain,
-    :user_name => "my-email@my-domain.com",
+    :user_name => "do-not-reply@example.com",
     :password => ENV["SMTP_ENTRY"],
     :enable_starttls_auto => true
   }
@@ -27,6 +28,9 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
+  
+  config.action_mailer.delivery_method = :test
+  config.action_mailer.default_url_options = { host: 'https://saas-project-app-nsaunders.c9users.io' }
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true

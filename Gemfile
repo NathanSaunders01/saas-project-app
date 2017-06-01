@@ -18,6 +18,7 @@ gem 'pg', '0.18.4'
 gem 'jquery-rails'
 gem 'devise'
 gem 'milia'
+gem 'bootstrap-datepicker-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
