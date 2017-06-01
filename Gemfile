@@ -23,6 +23,8 @@ gem 'milia'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
 # Use sendgrid-ruby gem to send emails to users
 gem 'sendgrid-ruby'
 
