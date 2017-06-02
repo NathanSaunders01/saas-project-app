@@ -19,7 +19,10 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'milia'
 gem 'bootstrap-datepicker-rails'
-
+gem 'aws-sdk'
+gem 'figaro'
+gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
+gem 'fog-aws'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
